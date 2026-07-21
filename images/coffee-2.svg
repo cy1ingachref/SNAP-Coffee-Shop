@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8a5a3b"/>
+      <stop offset="1" stop-color="#d8b88f"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g)"/>
+  <g transform="translate(225.0, 225.0) scale(1.0)"><path d="M45 72 h60 v30 a30 30 0 0 1 -60 0 z" fill="none" stroke="#fff7ef" stroke-width="4" stroke-linejoin="round"/><path d="M105 80 h14 a14 14 0 0 1 0 28 h-14" fill="none" stroke="#fff7ef" stroke-width="4"/><path d="M62 58 q5 -12 0 -24 M80 58 q5 -12 0 -24" fill="none" stroke="#fff7ef" stroke-width="3" stroke-linecap="round" opacity="0.7"/></g>
+  <text x="300.0" y="574" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#fff7ef" opacity="0.85">Cappuccino</text>
+  <text x="300.0" y="594" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#fff7ef" opacity="0.55">replace with photo</text>
+</svg>

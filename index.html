@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNAP Coffee Shop — Hay Nasr, Tunis</title>
+  <meta name="description" content="SNAP Coffee Shop in Hay Nasr (Ennasr), Tunis. Coffee, fresh food, and a cozy student-friendly space. Rated 4.3 on Google." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">SNAP</span>
+        <span class="brand-sub">coffee shop</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rating">Reviews</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <img class="hero-img" src="images/hero.svg" alt="A cup of freshly brewed coffee at SNAP Coffee Shop" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Hay Nasr · Ennasr · Tunis</p>
+      <h1>Slow mornings,<br />bright cups.</h1>
+      <p class="hero-lead">A cozy neighborhood café for students, remote workers, and anyone who likes their coffee made with care.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#menu">See the menu</a>
+        <a class="btn btn-ghost" href="#visit">Find us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Rating ===== -->
+  <section class="rating" id="rating">
+    <div class="container rating-inner">
+      <div class="rating-score">
+        <span class="score">4.3</span>
+        <div class="stars" aria-label="4.3 out of 5 stars">
+          <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star half">★</span>
+        </div>
+        <span class="review-count">Based on 26 Google reviews</span>
+      </div>
+      <p class="rating-note">Loved for our student-friendly space and community events. Come see why locals keep coming back.</p>
+    </div>
+  </section>
+
+  <!-- ===== Menu ===== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What's on</p>
+        <h2>Menu</h2>
+        <p class="section-sub">Simple, fresh, and made to order. Prices in TND.</p>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-col">
+          <h3 class="menu-col-title">Coffee &amp; Drinks</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span class="mi-name">Espresso</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
+            <li class="menu-item"><span class="mi-name">Cappuccino</span><span class="mi-dots"></span><span class="mi-price">6</span></li>
+            <li class="menu-item"><span class="mi-name">Latte</span><span class="mi-dots"></span><span class="mi-price">7</span></li>
+            <li class="menu-item"><span class="mi-name">Americano</span><span class="mi-dots"></span><span class="mi-price">5</span></li>
+            <li class="menu-item"><span class="mi-name">Hot Chocolate</span><span class="mi-dots"></span><span class="mi-price">6</span></li>
+            <li class="menu-item"><span class="mi-name">Fresh Mint Tea</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
+          </ul>
+        </div>
+
+        <div class="menu-col">
+          <h3 class="menu-col-title">Food &amp; Snacks</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span class="mi-name">Butter Croissant</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
+            <li class="menu-item"><span class="mi-name">Toasted Sandwich</span><span class="mi-dots"></span><span class="mi-price">9</span></li>
+            <li class="menu-item"><span class="mi-name">Chocolate Cake Slice</span><span class="mi-dots"></span><span class="mi-price">7</span></li>
+            <li class="menu-item"><span class="mi-name">Breakfast Plate</span><span class="mi-dots"></span><span class="mi-price">14</span></li>
+            <li class="menu-item"><span class="mi-name">Cheesecake</span><span class="mi-dots"></span><span class="mi-price">8</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="menu-foot">Menu items and prices are indicative — ask in-store for the day's specials.</p>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">From the counter</p>
+        <h2>Gallery</h2>
+        <p class="section-sub">A peek at what we serve.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="g-card"><img src="images/coffee-1.svg" alt="Espresso" loading="lazy" /><figcaption>Espresso</figcaption></figure>
+        <figure class="g-card"><img src="images/coffee-2.svg" alt="Cappuccino" loading="lazy" /><figcaption>Cappuccino</figcaption></figure>
+        <figure class="g-card"><img src="images/food-1.svg" alt="Butter croissant" loading="lazy" /><figcaption>Croissant</figcaption></figure>
+        <figure class="g-card"><img src="images/food-2.svg" alt="Toasted sandwich" loading="lazy" /><figcaption>Sandwich</figcaption></figure>
+        <figure class="g-card"><img src="images/food-3.svg" alt="Chocolate cake" loading="lazy" /><figcaption>Cake</figcaption></figure>
+      </div>
+      <p class="gallery-foot">Photos shown are placeholders — drop your real images into the <code>images/</code> folder to replace them.</p>
+    </div>
+  </section>
+
+  <!-- ===== Visit / Contact ===== -->
+  <section class="visit" id="visit">
+    <div class="container visit-inner">
+      <div class="visit-text">
+        <p class="eyebrow">Come say hi</p>
+        <h2>Visit us</h2>
+        <ul class="visit-list">
+          <li><span class="v-label">Location</span> Hay Nasr (Ennasr), Tunis</li>
+          <li><span class="v-label">Phone</span> <a href="tel:+21600000000">+216 00 000 000</a></li>
+          <li><span class="v-label">Hours</span> Open daily · 7:00 – 23:00</li>
+          <li><span class="v-label">Events</span> Student nights &amp; community meetups</li>
+        </ul>
+        <a class="btn btn-primary" href="https://wa.me/21600000000" target="_blank" rel="noopener">Message us on WhatsApp</a>
+      </div>
+      <div class="visit-map">
+        <div class="map-placeholder">
+          <span>Map coming soon</span>
+          <small>Hay Nasr (Ennasr), Tunis</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand-mark">SNAP</span>
+      <p>© <span id="year"></span> SNAP Coffee Shop · Hay Nasr, Tunis</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
