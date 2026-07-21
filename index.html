@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,15 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.replace('no-js','js');</script>
 </head>
 <body>
   <!-- ===== Header ===== -->
-  <header class="site-header">
+  <header class="site-header" id="header">
     <div class="container nav">
       <a class="brand" href="#top">
         <span class="brand-mark">SNAP</span>
         <span class="brand-sub">coffee shop</span>
       </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav-links">
         <a href="#menu">Menu</a>
         <a href="#gallery">Gallery</a>
@@ -39,25 +43,26 @@
         <a class="btn btn-primary" href="#menu">See the menu</a>
         <a class="btn btn-ghost" href="#visit">Find us</a>
       </div>
+      <a class="scroll-cue" href="#rating" aria-label="Scroll down"><span></span></a>
     </div>
   </section>
 
   <!-- ===== Rating ===== -->
-  <section class="rating" id="rating">
+  <section class="rating" id="rating" data-reveal>
     <div class="container rating-inner">
       <div class="rating-score">
-        <span class="score">4.3</span>
+        <span class="score" data-target="4.3">0.0</span>
         <div class="stars" aria-label="4.3 out of 5 stars">
           <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star half">★</span>
         </div>
-        <span class="review-count">Based on 26 Google reviews</span>
+        <span class="review-count">Based on <span class="num" data-target="26">0</span> Google reviews</span>
       </div>
       <p class="rating-note">Loved for our student-friendly space and community events. Come see why locals keep coming back.</p>
     </div>
   </section>
 
   <!-- ===== Menu ===== -->
-  <section class="menu" id="menu">
+  <section class="menu" id="menu" data-reveal>
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">What's on</p>
@@ -65,41 +70,36 @@
         <p class="section-sub">Simple, fresh, and made to order. Prices in TND.</p>
       </div>
 
-      <div class="menu-grid">
-        <div class="menu-col">
-          <h3 class="menu-col-title">Coffee &amp; Drinks</h3>
-          <ul class="menu-list">
-            <li class="menu-item"><span class="mi-name">Espresso</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
-            <li class="menu-item"><span class="mi-name">Cappuccino</span><span class="mi-dots"></span><span class="mi-price">6</span></li>
-            <li class="menu-item"><span class="mi-name">Latte</span><span class="mi-dots"></span><span class="mi-price">7</span></li>
-            <li class="menu-item"><span class="mi-name">Americano</span><span class="mi-dots"></span><span class="mi-price">5</span></li>
-            <li class="menu-item"><span class="mi-name">Hot Chocolate</span><span class="mi-dots"></span><span class="mi-price">6</span></li>
-            <li class="menu-item"><span class="mi-name">Fresh Mint Tea</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-col">
-          <h3 class="menu-col-title">Food &amp; Snacks</h3>
-          <ul class="menu-list">
-            <li class="menu-item"><span class="mi-name">Butter Croissant</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
-            <li class="menu-item"><span class="mi-name">Toasted Sandwich</span><span class="mi-dots"></span><span class="mi-price">9</span></li>
-            <li class="menu-item"><span class="mi-name">Chocolate Cake Slice</span><span class="mi-dots"></span><span class="mi-price">7</span></li>
-            <li class="menu-item"><span class="mi-name">Breakfast Plate</span><span class="mi-dots"></span><span class="mi-price">14</span></li>
-            <li class="menu-item"><span class="mi-name">Cheesecake</span><span class="mi-dots"></span><span class="mi-price">8</span></li>
-          </ul>
-        </div>
+      <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab active" data-cat="all" role="tab">All</button>
+        <button class="menu-tab" data-cat="coffee" role="tab">Coffee &amp; Drinks</button>
+        <button class="menu-tab" data-cat="food" role="tab">Food &amp; Snacks</button>
       </div>
+
+      <ul class="menu-list">
+        <li class="menu-item" data-cat="coffee"><span class="mi-name">Espresso</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
+        <li class="menu-item" data-cat="coffee"><span class="mi-name">Cappuccino</span><span class="mi-dots"></span><span class="mi-price">6</span></li>
+        <li class="menu-item" data-cat="coffee"><span class="mi-name">Latte</span><span class="mi-dots"></span><span class="mi-price">7</span></li>
+        <li class="menu-item" data-cat="coffee"><span class="mi-name">Americano</span><span class="mi-dots"></span><span class="mi-price">5</span></li>
+        <li class="menu-item" data-cat="coffee"><span class="mi-name">Hot Chocolate</span><span class="mi-dots"></span><span class="mi-price">6</span></li>
+        <li class="menu-item" data-cat="coffee"><span class="mi-name">Fresh Mint Tea</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
+        <li class="menu-item" data-cat="food"><span class="mi-name">Butter Croissant</span><span class="mi-dots"></span><span class="mi-price">4</span></li>
+        <li class="menu-item" data-cat="food"><span class="mi-name">Toasted Sandwich</span><span class="mi-dots"></span><span class="mi-price">9</span></li>
+        <li class="menu-item" data-cat="food"><span class="mi-name">Chocolate Cake Slice</span><span class="mi-dots"></span><span class="mi-price">7</span></li>
+        <li class="menu-item" data-cat="food"><span class="mi-name">Breakfast Plate</span><span class="mi-dots"></span><span class="mi-price">14</span></li>
+        <li class="menu-item" data-cat="food"><span class="mi-name">Cheesecake</span><span class="mi-dots"></span><span class="mi-price">8</span></li>
+      </ul>
       <p class="menu-foot">Menu items and prices are indicative — ask in-store for the day's specials.</p>
     </div>
   </section>
 
   <!-- ===== Gallery ===== -->
-  <section class="gallery" id="gallery">
+  <section class="gallery" id="gallery" data-reveal>
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">From the counter</p>
         <h2>Gallery</h2>
-        <p class="section-sub">A peek at what we serve.</p>
+        <p class="section-sub">A peek at what we serve — tap any photo to enlarge.</p>
       </div>
       <div class="gallery-grid">
         <figure class="g-card"><img src="images/coffee-1.svg" alt="Espresso" loading="lazy" /><figcaption>Espresso</figcaption></figure>
@@ -113,7 +113,7 @@
   </section>
 
   <!-- ===== Visit / Contact ===== -->
-  <section class="visit" id="visit">
+  <section class="visit" id="visit" data-reveal>
     <div class="container visit-inner">
       <div class="visit-text">
         <p class="eyebrow">Come say hi</p>
@@ -143,8 +143,17 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lb-close" aria-label="Close">×</button>
+    <button class="lb-prev" aria-label="Previous">‹</button>
+    <figure class="lb-fig"><img src="" alt="" /><figcaption class="lb-cap"></figcaption></figure>
+    <button class="lb-next" aria-label="Next">›</button>
+  </div>
+
+  <!-- ===== Back to top ===== -->
+  <button class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
