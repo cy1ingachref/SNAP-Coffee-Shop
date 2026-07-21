@@ -24,6 +24,7 @@
       </button>
       <nav class="nav-links">
         <a href="#menu">Menu</a>
+        <a href="#craft">How it's made</a>
         <a href="#gallery">Gallery</a>
         <a href="#rating">Reviews</a>
         <a href="#visit">Visit</a>
@@ -41,9 +42,58 @@
       <p class="hero-lead">A cozy neighborhood café for students, remote workers, and anyone who likes their coffee made with care.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#menu">See the menu</a>
-        <a class="btn btn-ghost" href="#visit">Find us</a>
+        <a class="btn btn-ghost" href="#craft">Watch it made</a>
       </div>
-      <a class="scroll-cue" href="#rating" aria-label="Scroll down"><span></span></a>
+      <a class="scroll-cue" href="#craft" aria-label="Scroll down"><span></span></a>
+    </div>
+  </section>
+
+  <!-- ===== Craft scroll scene ===== -->
+  <section class="craft" id="craft">
+    <div class="craft-sticky">
+      <div class="container craft-head">
+        <p class="eyebrow">Made to order</p>
+        <h2>Fresh, every time</h2>
+        <p class="section-sub">Scroll to watch your order come together.</p>
+      </div>
+      <div class="craft-scene">
+        <div class="craft-panel">
+          <div class="craft-figure">
+            <svg class="svg-sandwich" viewBox="0 0 300 380" role="img" aria-label="A sandwich assembling layer by layer">
+              <g id="botBun"><path d="M68 252 h164 a18 18 0 0 1 -18 42 h-128 a18 18 0 0 1 -18 -42 z" fill="#d9a441"/><path d="M82 272 h136" stroke="#b9822f" stroke-width="3" opacity="0.45"/></g>
+              <g id="patty"><rect x="72" y="220" width="156" height="34" rx="14" fill="#5a3825"/><rect x="72" y="220" width="156" height="34" rx="14" fill="#3f2817" opacity="0.25"/></g>
+              <g id="cheese"><path d="M82 208 h136 v14 h-136 z" fill="#f1c40f"/><path d="M98 222 l8 14 8 -14 z M150 222 l8 14 8 -14 z M196 222 l8 14 8 -14 z" fill="#f1c40f"/></g>
+              <g id="lettuce"><path d="M60 200 q12 -18 24 0 q12 -18 24 0 q12 -18 24 0 q12 -18 24 0 q12 -18 24 0 q12 -18 24 0 l0 16 h-144 z" fill="#6ab04c"/></g>
+              <g id="tomato"><circle cx="128" cy="190" r="15" fill="#c0392b"/><circle cx="172" cy="190" r="15" fill="#c0392b"/><circle cx="128" cy="190" r="15" fill="#e74c3c" opacity="0.4"/><circle cx="172" cy="190" r="15" fill="#e74c3c" opacity="0.4"/></g>
+              <g id="topBun"><path d="M70 196 Q70 150 150 150 Q230 150 230 196 Z" fill="#e0a94e"/><circle cx="112" cy="176" r="3" fill="#fff" opacity="0.85"/><circle cx="150" cy="168" r="3" fill="#fff" opacity="0.85"/><circle cx="188" cy="176" r="3" fill="#fff" opacity="0.85"/></g>
+            </svg>
+          </div>
+          <p class="craft-label">Our Sandwich</p>
+          <p class="craft-cap" id="sandwichCap">Building the base…</p>
+        </div>
+        <div class="craft-panel">
+          <div class="craft-figure">
+            <svg class="svg-coffee" viewBox="0 0 300 380" role="img" aria-label="Coffee pouring and filling a cup">
+              <defs>
+                <clipPath id="cupClip"><path d="M100 178 L200 178 L186 306 Q150 320 114 306 Z"/></clipPath>
+              </defs>
+              <ellipse cx="150" cy="332" rx="96" ry="16" fill="#c8a27c"/>
+              <ellipse cx="150" cy="328" rx="96" ry="14" fill="#dcb98f"/>
+              <path d="M200 206 q44 6 40 52 q-4 34 -42 24" fill="none" stroke="#6f4e37" stroke-width="9"/>
+              <path d="M95 172 L205 172 L188 312 Q150 326 112 312 Z" fill="#fff7ef" stroke="#6f4e37" stroke-width="4"/>
+              <g id="coffeeStream"><rect x="145" y="34" width="10" height="140" rx="5" fill="#4a3228"/></g>
+              <g clip-path="url(#cupClip)"><rect id="coffeeLiquid" x="96" y="176" width="108" height="140" fill="#4a3228"/></g>
+              <g id="coffeeSteam" opacity="0">
+                <path d="M132 152 q-10 -16 0 -30 q10 -14 0 -28" fill="none" stroke="#fff" stroke-width="4" opacity="0.7" stroke-linecap="round"/>
+                <path d="M168 152 q10 -16 0 -30 q-10 -14 0 -28" fill="none" stroke="#fff" stroke-width="4" opacity="0.7" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <p class="craft-label">Our Coffee</p>
+          <p class="craft-cap" id="coffeeCap">Ready for a pour…</p>
+        </div>
+      </div>
+      <div class="craft-progress"><span id="craftBar"></span></div>
     </div>
   </section>
 

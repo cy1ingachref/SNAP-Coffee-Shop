@@ -76,6 +76,26 @@ h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; 
 .scroll-cue span { width: 4px; height: 8px; background: #fff; border-radius: 2px; margin-top: 7px; animation: scrollCue 1.6s var(--ease) infinite; }
 @keyframes scrollCue { 0% { opacity: 0; transform: translateY(0); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
 
+/* ===== Craft scroll scene ===== */
+.craft { height: 320vh; position: relative; background: linear-gradient(180deg, var(--cream), var(--sand)); }
+.craft-sticky { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
+.craft-head { text-align: center; margin-bottom: 8px; }
+.craft-head h2 { font-size: clamp(2rem, 4vw, 2.8rem); }
+.craft-scene { display: flex; gap: 48px; justify-content: center; align-items: center; flex: 1; max-width: 980px; margin: 0 auto; padding: 0 24px; width: 100%; }
+.craft-panel { flex: 1; text-align: center; }
+.craft-figure { display: flex; justify-content: center; }
+.craft-figure svg { width: 100%; max-width: 300px; height: auto; filter: drop-shadow(0 22px 34px rgba(74,50,40,0.18)); }
+.craft-label { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--espresso); margin-top: 18px; }
+.craft-cap { color: var(--muted); font-size: 0.96rem; min-height: 1.4em; transition: opacity 0.2s; }
+.craft-progress { height: 4px; background: rgba(111,78,55,0.15); width: 100%; }
+.craft-progress span { display: block; height: 100%; background: var(--gold); transform: scaleX(0); transform-origin: left; }
+/* liquid fills from the bottom of the cup */
+#coffeeLiquid { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); }
+#coffeeStream { transition: opacity 0.25s linear; }
+#coffeeSteam { transition: opacity 0.4s linear; }
+/* initial hidden state for sandwich layers (before JS runs) */
+.js #botBun, .js #patty, .js #cheese, .js #lettuce, .js #tomato, .js #topBun { opacity: 0; }
+
 /* ===== Rating ===== */
 .rating { background: var(--espresso); color: #fff; }
 .rating-inner { display: flex; align-items: center; gap: 40px; padding: 52px 24px; flex-wrap: wrap; }
@@ -162,6 +182,9 @@ h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; 
   .nav-links.open { transform: translateX(0); }
   .nav-links a { color: #fff; font-size: 1.2rem; }
   .nav-links a::after { background: var(--gold); }
+  .craft { height: 300vh; }
+  .craft-scene { gap: 18px; }
+  .craft-figure svg { max-width: 200px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .visit-inner { grid-template-columns: 1fr; }
   .rating-inner { flex-direction: column; align-items: flex-start; gap: 18px; }
