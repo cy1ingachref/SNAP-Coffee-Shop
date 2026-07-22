@@ -36,6 +36,13 @@
   }, { threshold: 0.12 });
   document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
 
+  // SAFETY: if a reveal element is never triggered (slow/old mobile, observer edge cases),
+  // force everything visible shortly after load so content is never stuck hidden.
+  function revealAll() { document.body.classList.add('reveal-fallback'); }
+  window.addEventListener('load', function () { setTimeout(revealAll, 1500); });
+  // also cover the case where 'load' already fired or never does
+  setTimeout(revealAll, 3000);
+
   // Count-up
   function countUp(el, target, dur, decimals) {
     var start = performance.now();
