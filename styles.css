@@ -150,7 +150,8 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
 .v-label { display: inline-block; width: 96px; font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--latte); font-weight: 600; }
 .visit-list a { color: var(--coffee); text-decoration: none; font-weight: 600; }
 .visit-list a:hover { text-decoration: underline; }
-.map-placeholder { background: linear-gradient(135deg, var(--latte), var(--coffee)); border-radius: var(--radius); height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; box-shadow: var(--shadow); }
+.map-placeholder { background: linear-gradient(135deg, var(--latte), var(--coffee)); border-radius: var(--radius); height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fff; box-shadow: var(--shadow); text-decoration: none; transition: transform 0.25s var(--ease), box-shadow 0.25s; cursor: pointer; }
+.map-placeholder:hover { transform: translateY(-4px); box-shadow: 0 28px 60px rgba(58,38,27,0.24); }
 .map-placeholder span { font-family: 'Fraunces', serif; font-size: 1.4rem; }
 .map-placeholder small { opacity: 0.85; margin-top: 6px; }
 
