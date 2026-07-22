@@ -39,6 +39,7 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
 .site-header.scrolled { background: rgba(251, 243, 233, 0.9); backdrop-filter: blur(14px); box-shadow: 0 8px 30px rgba(58,38,27,0.08); padding: 8px 0; }
 .nav { display: flex; align-items: center; justify-content: space-between; }
 .brand { text-decoration: none; display: flex; flex-direction: column; line-height: 1; }
+.brand-logo { height: 40px; width: auto; border-radius: 8px; margin-bottom: 2px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
 .brand-mark { font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.6rem; color: #fff; letter-spacing: 0.02em; transition: color 0.4s; }
 .brand-sub { font-size: 0.6rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--latte); margin-top: 3px; }
 .scrolled .brand-mark { color: var(--coffee); }
@@ -80,7 +81,7 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
 
 .hero-art { position: relative; display: flex; justify-content: center; align-items: center; }
 .hero-ring { position: absolute; width: 360px; height: 360px; border-radius: 50%; border: 1.5px dashed rgba(224,162,60,0.45); animation: spin 26s linear infinite; }
-.float-cup { width: 92%; max-width: 440px; filter: drop-shadow(0 30px 50px rgba(0,0,0,0.4)); animation: float 6s var(--ease) infinite; }
+.float-cup { width: 86%; max-width: 420px; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%; border: 8px solid rgba(255,255,255,0.12); filter: drop-shadow(0 30px 50px rgba(0,0,0,0.4)); animation: float 6s var(--ease) infinite; }
 @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-16px); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 
@@ -103,7 +104,7 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
 .dish { position: relative; background: var(--paper); border: 1px solid rgba(111,78,55,0.1); border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 28px rgba(58,38,27,0.06); transition: transform 0.25s var(--ease), box-shadow 0.25s; }
 .dish:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
 .dish-img { background: var(--sand); display: block; }
-.dish-img img { width: 100%; height: 180px; object-fit: contain; display: block; padding: 14px; }
+.dish-img img { width: 100%; height: 200px; object-fit: cover; display: block; }
 .dish-body { padding: 22px 24px 26px; }
 .dish-name { font-size: 1.3rem; margin-bottom: 6px; }
 .dish-desc { color: var(--muted); font-size: 0.92rem; min-height: 2.6em; }
@@ -159,6 +160,7 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
 .site-footer { background: var(--espresso); color: rgba(255,255,255,0.78); padding: 36px 0; }
 .footer-inner { display: flex; align-items: center; gap: 16px; }
 .site-footer .brand-mark { color: #fff; }
+.brand-logo-img { height: 38px; width: auto; border-radius: 8px; object-fit: cover; }
 .site-footer p { font-size: 0.9rem; }
 .to-top { margin-left: auto; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.12); color: #fff; text-decoration: none; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; transition: background 0.2s, transform 0.2s; }
 .to-top:hover { background: var(--amber); color: var(--espresso); transform: translateY(-3px); }
