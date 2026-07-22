@@ -88,24 +88,6 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
 .scroll-cue span { width: 4px; height: 8px; background: #fff; border-radius: 2px; margin-top: 7px; animation: scrollCue 1.6s var(--ease) infinite; }
 @keyframes scrollCue { 0% { opacity: 0; transform: translateY(0); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
 
-/* ===== Craft scene ===== */
-.craft { height: 320vh; position: relative; background: linear-gradient(180deg, var(--cream), var(--sand)); }
-.craft-sticky { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
-.craft-head { text-align: center; margin-bottom: 6px; }
-.craft-head h2 { font-size: clamp(2rem, 4.5vw, 3rem); }
-.craft-scene { display: flex; gap: 48px; justify-content: center; align-items: center; flex: 1; max-width: 980px; margin: 0 auto; padding: 0 24px; width: 100%; }
-.craft-panel { flex: 1; text-align: center; }
-.craft-figure { display: flex; justify-content: center; }
-.craft-figure svg { width: 100%; max-width: 300px; height: auto; filter: drop-shadow(0 22px 34px rgba(58,38,27,0.18)); }
-.craft-label { font-family: 'Fraunces', serif; font-size: 1.4rem; color: var(--espresso); margin-top: 18px; }
-.craft-cap { color: var(--muted); font-size: 0.98rem; min-height: 1.4em; }
-.craft-progress { height: 4px; background: rgba(111,78,55,0.15); width: 100%; }
-.craft-progress span { display: block; height: 100%; background: var(--amber); transform: scaleX(0); transform-origin: left; }
-#coffeeLiquid { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); }
-#coffeeStream { transition: opacity 0.25s linear; }
-#coffeeSteam { transition: opacity 0.4s linear; }
-.js #botBun, .js #patty, .js #cheese, .js #lettuce, .js #tomato, .js #topBun { opacity: 0; }
-
 /* ===== Section heads ===== */
 .section-head { text-align: center; margin-bottom: 48px; }
 .section-head h2 { font-size: clamp(2.1rem, 4.5vw, 3rem); margin-bottom: 12px; }
@@ -118,12 +100,15 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
 .menu-tab:hover { background: var(--sand); }
 .menu-tab.active { background: var(--coffee); color: #fff; border-color: var(--coffee); box-shadow: 0 10px 22px rgba(111,78,55,0.3); }
 .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.dish { position: relative; background: var(--paper); border: 1px solid rgba(111,78,55,0.1); border-radius: var(--radius); padding: 26px 24px; box-shadow: 0 10px 28px rgba(58,38,27,0.06); transition: transform 0.25s var(--ease), box-shadow 0.25s; }
+.dish { position: relative; background: var(--paper); border: 1px solid rgba(111,78,55,0.1); border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 28px rgba(58,38,27,0.06); transition: transform 0.25s var(--ease), box-shadow 0.25s; }
 .dish:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+.dish-img { background: var(--sand); display: block; }
+.dish-img img { width: 100%; height: 180px; object-fit: contain; display: block; padding: 14px; }
+.dish-body { padding: 22px 24px 26px; }
 .dish-name { font-size: 1.3rem; margin-bottom: 6px; }
 .dish-desc { color: var(--muted); font-size: 0.92rem; min-height: 2.6em; }
 .dish-price { display: inline-block; margin-top: 10px; font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.25rem; color: var(--coffee); }
-.dish-badge { position: absolute; top: 16px; right: 16px; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.dish-badge { position: absolute; top: 14px; right: 14px; z-index: 2; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
 .dish-badge.hot { background: var(--amber); color: var(--espresso); }
 .dish-badge.new { background: #6e8b5b; color: #fff; }
 .menu-foot { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 36px; }
@@ -203,9 +188,6 @@ h1 em, h2 em { font-style: italic; color: var(--amber); }
   .nav-links.open { transform: translateX(0); }
   .nav-links a { color: #fff; font-size: 1.2rem; }
   .nav-links a::after { background: var(--amber); }
-  .craft { height: 300vh; }
-  .craft-scene { gap: 16px; }
-  .craft-figure svg { max-width: 180px; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .visit-inner { grid-template-columns: 1fr; }
 }
