@@ -118,17 +118,6 @@ body:not(.js) [data-reveal] { opacity: 1 !important; transform: none !important;
 .dish-badge.new { background: #6e8b5b; color: #fff; }
 .menu-foot { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 36px; }
 
-/* ===== Gallery ===== */
-.gallery { padding: 100px 0; background: var(--sand); }
-.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.g-card { background: var(--paper); border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 28px rgba(58,38,27,0.1); cursor: pointer; transition: transform 0.25s var(--ease), box-shadow 0.25s; }
-.g-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-.g-card img { width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s var(--ease); }
-.g-card:hover img { transform: scale(1.06); }
-.g-card figcaption { padding: 16px 18px; font-weight: 500; color: var(--espresso); font-family: 'Fraunces', serif; font-size: 1.1rem; }
-.gallery-foot { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 30px; }
-.gallery-foot code { background: rgba(111,78,55,0.1); padding: 2px 7px; border-radius: 6px; font-size: 0.8rem; }
-
 /* ===== Reviews ===== */
 .reviews { padding: 100px 0; }
 .rating-banner { display: flex; justify-content: center; margin-bottom: 48px; }
