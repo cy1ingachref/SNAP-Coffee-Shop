@@ -181,7 +181,34 @@ body:not(.js) [data-reveal] { opacity: 1 !important; transform: none !important;
 .lb-prev { left: 22px; top: 50%; transform: translateY(-50%); }
 .lb-next { right: 22px; top: 50%; transform: translateY(-50%); }
 
-/* ===== Responsive ===== */
+/* ===== Language switch ===== */
+.lang-switch { display: flex; gap: 4px; margin-inline-start: auto; margin-inline-end: 14px; }
+.lang-btn { background: transparent; border: 1.5px solid rgba(255,255,255,0.4); color: #fff; font-weight: 600; font-size: 0.74rem; letter-spacing: 0.04em; padding: 6px 10px; border-radius: 999px; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; line-height: 1; }
+.lang-btn:hover { background: rgba(255,255,255,0.15); }
+.scrolled .lang-btn { border-color: var(--latte); color: var(--coffee); }
+.scrolled .lang-btn:hover { background: var(--sand); }
+.lang-btn.active { background: var(--amber); border-color: var(--amber); color: var(--espresso); }
+/* when nav open (mobile) keep switcher visible above overlay */
+.scrolled .lang-btn.active { color: var(--espresso); }
+
+/* RTL (Arabic) */
+html[dir="rtl"] body { direction: rtl; text-align: right; }
+html[dir="rtl"] .hero-points li { padding-left: 0; padding-right: 34px; }
+html[dir="rtl"] .hero-points li::before { left: auto; right: 0; }
+html[dir="rtl"] .visit-list .v-label { margin-right: 0; }
+html[dir="rtl"] .review::before { left: auto; right: 18px; }
+html[dir="rtl"] .lang-switch { margin-inline-start: 14px; margin-inline-end: auto; }
+html[dir="rtl"] .nav-links { inset: 0 0 0 auto; }
+html[dir="rtl"] .to-top { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .hero-copy .eyebrow, html[dir="rtl"] .eyebrow { text-align: inherit; }
+/* Arabic webfont */
+html[lang="ar"] body { font-family: 'Tajawal', 'Inter', system-ui, sans-serif; }
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3 { font-family: 'Tajawal', 'Fraunces', Georgia, serif; font-weight: 700; }
+
+@media (max-width: 760px) {
+  .lang-switch { position: relative; z-index: 75; }
+  .nav-links { z-index: 70; }
+}
 img { max-width: 100%; }
 @media (max-width: 900px) {
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
