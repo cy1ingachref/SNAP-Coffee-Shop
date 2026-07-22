@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7a5236"/>
-      <stop offset="1" stop-color="#caa57e"/>
-    </linearGradient>
-  </defs>
-  <rect width="600" height="600" fill="url(#g)"/>
-  <g transform="translate(225.0, 225.0) scale(1.0)"><path d="M40 70 h70 v35 a35 35 0 0 1 -70 0 z" fill="none" stroke="#fff7ef" stroke-width="4" stroke-linejoin="round"/><path d="M110 80 h18 a18 18 0 0 1 0 36 h-18" fill="none" stroke="#fff7ef" stroke-width="4"/><path d="M58 55 q6 -14 0 -28 M78 55 q6 -14 0 -28 M98 55 q6 -14 0 -28" fill="none" stroke="#fff7ef" stroke-width="3" stroke-linecap="round" opacity="0.7"/></g>
-  <text x="300.0" y="574" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#fff7ef" opacity="0.85">Espresso</text>
-  <text x="300.0" y="594" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#fff7ef" opacity="0.55">replace with photo</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBF3E9"/><stop offset="1" stop-color="#C9A47A"/></linearGradient><radialGradient id="glow" cx="0.5" cy="0.42" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs><rect width="600" height="600" fill="url(#bg)"/><rect width="600" height="600" fill="url(#glow)"/><path d="M285 150 q-14 -22 0 -42 q14 -20 0 -40" fill="none" stroke="#FFFDF9" stroke-width="5" stroke-linecap="round" opacity="0.7"/><path d="M315 150 q14 -22 0 -42 q-14 -20 0 -40" fill="none" stroke="#FFFDF9" stroke-width="5" stroke-linecap="round" opacity="0.7"/><ellipse cx="300" cy="392" rx="135" ry="20" fill="#C9A47A" opacity="0.55"/><path d="M205 200 h190 v70 a95 95 0 0 1 -190 0 z" fill="#FFFDF9" stroke="#7A5236" stroke-width="7"/><path d="M222 214 h156 v56 a78 78 0 0 1 -156 0 z" fill="#7A5236"/><path d="M300 232 q-22 14 -40 0 q22 18 40 0 q-22 -18 40 0 q-18 -14 -40 0" fill="#C9A47A" opacity="0.95"/><path d="M395 220 h26 a26 26 0 0 1 0 52 h-26" fill="none" stroke="#7A5236" stroke-width="7"/><text x="300" y="566" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#7A5236" opacity="0.85">Coffee 1</text></svg>

@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7d5230"/>
-      <stop offset="1" stop-color="#cda87e"/>
-    </linearGradient>
-  </defs>
-  <rect width="600" height="600" fill="url(#g)"/>
-  <g transform="translate(225.0, 225.0) scale(1.0)"><path d="M45 70 q35 -22 70 0 v22 q-35 22 -70 0 z" fill="none" stroke="#fff7ef" stroke-width="4" stroke-linejoin="round"/><path d="M45 70 q35 -22 70 0" fill="none" stroke="#fff7ef" stroke-width="4"/><path d="M52 78 h56 M52 86 h56" stroke="#fff7ef" stroke-width="2.5" opacity="0.5"/></g>
-  <text x="300.0" y="574" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#fff7ef" opacity="0.85">Sandwich</text>
-  <text x="300.0" y="594" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#fff7ef" opacity="0.55">replace with photo</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBF3E9"/><stop offset="1" stop-color="#C9A47A"/></linearGradient><radialGradient id="glow" cx="0.5" cy="0.42" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs><rect width="600" height="600" fill="url(#bg)"/><rect width="600" height="600" fill="url(#glow)"/><rect x="180" y="352" width="240" height="40" rx="16" fill="#E0A23C" stroke="#5A3A29" stroke-width="6"/><rect x="190" y="318" width="220" height="40" rx="14" fill="#5A3A29"/><path d="M196 306 h208 v10 h-208 z" fill="#E0A23C"/><path d="M170 300 q14 -26 28 0 q14 -26 28 0 q14 -26 28 0 q14 -26 28 0 q14 -26 28 0 q14 -26 28 0 q14 -26 28 0 l0 18 h-252 z" fill="#6E8B5B" stroke="#5A3A29" stroke-width="3"/><circle cx="248" cy="290" r="16" fill="#C0563F"/><circle cx="352" cy="290" r="16" fill="#C0563F"/><path d="M180 282 Q180 224 300 224 Q420 224 420 282 Z" fill="#E0A23C" stroke="#5A3A29" stroke-width="6"/><circle cx="250" cy="256" r="4" fill="#FFFDF9"/><circle cx="300" cy="246" r="4" fill="#FFFDF9"/><circle cx="350" cy="256" r="4" fill="#FFFDF9"/><text x="300" y="566" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#7A5236" opacity="0.85">Food 2</text></svg>

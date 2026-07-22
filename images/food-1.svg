@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#9c6b3f"/>
-      <stop offset="1" stop-color="#e0c39a"/>
-    </linearGradient>
-  </defs>
-  <rect width="600" height="600" fill="url(#g)"/>
-  <g transform="translate(225.0, 225.0) scale(1.0)"><path d="M55 95 q-20 -45 25 -55 q45 10 25 55 q-25 -12 -50 0 z" fill="none" stroke="#fff7ef" stroke-width="4" stroke-linejoin="round"/><path d="M70 50 q15 8 0 45 M85 52 q12 10 -2 43" fill="none" stroke="#fff7ef" stroke-width="3" opacity="0.6"/></g>
-  <text x="300.0" y="574" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#fff7ef" opacity="0.85">Croissant</text>
-  <text x="300.0" y="594" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#fff7ef" opacity="0.55">replace with photo</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBF3E9"/><stop offset="1" stop-color="#C9A47A"/></linearGradient><radialGradient id="glow" cx="0.5" cy="0.42" r="0.6"><stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient></defs><rect width="600" height="600" fill="url(#bg)"/><rect width="600" height="600" fill="url(#glow)"/><path d="M170 360 q-40 -150 130 -180 q170 30 130 180 q-65 -44 -130 0 q-65 -44 -130 0 z" fill="#E0A23C" stroke="#5A3A29" stroke-width="6" stroke-linejoin="round"/><path d="M250 195 q40 26 0 150 M300 188 q36 30 0 162 M350 195 q-40 26 0 150" fill="none" stroke="#5A3A29" stroke-width="4" opacity="0.5"/><circle cx="262" cy="250" r="3.5" fill="#FFFDF9"/><circle cx="300" cy="240" r="3.5" fill="#FFFDF9"/><circle cx="338" cy="250" r="3.5" fill="#FFFDF9"/><circle cx="285" cy="278" r="3.5" fill="#FFFDF9"/><circle cx="315" cy="278" r="3.5" fill="#FFFDF9"/><text x="300" y="566" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#7A5236" opacity="0.85">Food 1</text></svg>

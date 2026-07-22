@@ -1,12 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6f4e37"/>
-      <stop offset="1" stop-color="#c8a27c"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="600" fill="url(#g)"/>
-  <g transform="translate(525.0, 225.0) scale(1.0)"><path d="M40 70 h70 v35 a35 35 0 0 1 -70 0 z" fill="none" stroke="#fff7ef" stroke-width="4" stroke-linejoin="round"/><path d="M110 80 h18 a18 18 0 0 1 0 36 h-18" fill="none" stroke="#fff7ef" stroke-width="4"/><path d="M58 55 q6 -14 0 -28 M78 55 q6 -14 0 -28 M98 55 q6 -14 0 -28" fill="none" stroke="#fff7ef" stroke-width="3" stroke-linecap="round" opacity="0.7"/></g>
-  <text x="600.0" y="574" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#fff7ef" opacity="0.85">SNAP Coffee</text>
-  <text x="600.0" y="594" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#fff7ef" opacity="0.55">freshly brewed daily</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600"><defs><linearGradient id="hb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a261b"/><stop offset="1" stop-color="#6b4329"/></linearGradient><radialGradient id="hg" cx="0.55" cy="0.4" r="0.6"><stop offset="0" stop-color="#c98a4e" stop-opacity="0.5"/><stop offset="1" stop-color="#3a261b" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="600" fill="url(#hb)"/><rect width="1200" height="600" fill="url(#hg)"/><path d="M520 230 q-18 -26 0 -50 q18 -24 0 -48" fill="none" stroke="#FFFDF9" stroke-width="6" stroke-linecap="round" opacity="0.75"/><path d="M560 230 q18 -26 0 -50 q-18 -24 0 -48" fill="none" stroke="#FFFDF9" stroke-width="6" stroke-linecap="round" opacity="0.75"/><ellipse cx="540" cy="470" rx="170" ry="26" fill="#C9A47A" opacity="0.45"/><path d="M360 286 h360 v96 a180 180 0 0 1 -360 0 z" fill="#FFFDF9" stroke="#5A3A29" stroke-width="9"/><path d="M388 308 h304 v70 a152 152 0 0 1 -304 0 z" fill="#7A5236"/><path d="M540 318 q-34 22 -64 0 q34 30 64 0 q-34 -30 64 0 q-30 -22 -64 0" fill="#C9A47A" opacity="0.95"/><path d="M720 312 h42 a42 42 0 0 1 0 84 h-42" fill="none" stroke="#5A3A29" stroke-width="9"/><text x="540" y="560" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#FFFDF9">freshly brewed, daily</text></svg>
