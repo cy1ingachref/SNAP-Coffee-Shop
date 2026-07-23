@@ -4,12 +4,10 @@
   var header = document.getElementById('header');
   var heroImg = document.querySelector('.float-cup');
   var toTop = document.querySelector('.to-top');
-  var actionBar = document.getElementById('actionBar');
 
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
     header.classList.toggle('scrolled', y > 40);
-    if (actionBar) actionBar.classList.toggle('show', y > 300);
     if (heroImg && y < window.innerHeight) heroImg.style.transform = 'translateY(' + (y * 0.12) + 'px)';
   }
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -92,7 +90,6 @@
       'visit.price': 'Price', 'visit.find': 'Find', 'visit.maps': 'View on Google Maps',
       'visit.whatsapp': 'Message us on WhatsApp',
       'visit.tap': 'Tap to open · Les Jardins de Babylon, Ariana 2037',
-      'act.menu': 'Menu', 'act.directions': 'Directions', 'act.whatsapp': 'WhatsApp',
       'footer.copy': 'SNAP Coffee · Ariana, Tunis'
     },
     fr: {
@@ -141,7 +138,6 @@
       'visit.price': 'Prix', 'visit.find': 'Trouver', 'visit.maps': 'Voir sur Google Maps',
       'visit.whatsapp': 'Messagez-nous sur WhatsApp',
       'visit.tap': 'Touchez pour ouvrir · Les Jardins de Babylon, Ariana 2037',
-      'act.menu': 'Menu', 'act.directions': 'Itinéraire', 'act.whatsapp': 'WhatsApp',
       'footer.copy': 'SNAP Coffee · Ariana, Tunis'
     },
     ar: {
@@ -190,7 +186,6 @@
       'visit.price': 'السعر', 'visit.find': 'موقع', 'visit.maps': 'افتح في خرائط جوجل',
       'visit.whatsapp': 'راسلنا على واتساب',
       'visit.tap': 'اضغط للفتح · حدائق بابل، أريانة 2037',
-      'act.menu': 'القائمة', 'act.directions': 'الاتجاهات', 'act.whatsapp': 'واتساب',
       'footer.copy': 'سناپ كوفي · أريانة، تونس'
     }
   };
